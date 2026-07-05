@@ -2,15 +2,15 @@ import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 
+import urlRoutes from "./routes/urlRoutes.js";
+
 dotenv.config();
 
 const app = express();
 
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("Hello, World!");
-});
+app.use("/", urlRoutes);
 
 const PORT = process.env.PORT || 5000;
 
