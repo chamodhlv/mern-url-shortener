@@ -1,4 +1,4 @@
-import mongoose from "  mongoose";
+import mongoose from "mongoose";
 
 const urlSchema = new mongoose.Schema(
   {
@@ -11,7 +11,7 @@ const urlSchema = new mongoose.Schema(
       required: true,
       unique: true,
     },
-    Clicks: {
+    clicks: {
       type: Number,
       default: 0,
     },

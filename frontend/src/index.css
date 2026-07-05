@@ -1,2 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
-@plugin "daisyui";
+
+@theme {
+  --font-sans: 'Outfit', sans-serif;
+  
+  --color-ocean: #0B5497;
+  --color-ocean-hover: #084074;
+  --color-ocean-light: #e6eff8;
+  --color-ivory: #FFFEF9;
+  --color-ivory-dark: #f4f3ed;
+}
+
+body {
+  background-color: var(--color-ivory);
+  color: #1e293b;
+  font-family: var(--font-sans);
+}
